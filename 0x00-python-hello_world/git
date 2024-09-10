@@ -1,4 +1,5 @@
 #!/bin/bash
+chmod u+x *.py
 git add .
 git commit -m 'It comes from a show not a reptile'
 git push
