@@ -1,0 +1,5 @@
+#!/bin/bash
+git add .
+git commit -m 'It comes from a show not a reptile'
+git push
+
