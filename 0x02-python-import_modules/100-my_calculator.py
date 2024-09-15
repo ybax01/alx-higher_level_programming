@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import sys
-from calculator_1.py import add, sub, mul, div
+from calculator_1 import add, sub, mul, div
 
 def main():
     if len(sys.argv) != 4:
