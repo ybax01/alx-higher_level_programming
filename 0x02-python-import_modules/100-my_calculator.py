@@ -12,12 +12,13 @@ def main():
     op = sys.argv[2]
     b = int(sys.argv[3])
 
-    ops = {
+    ops = 
+    {
             '+': add,
             '-': sub,
             '*': mul,
             '/': div
-            }
+    }
 
     if op not in ops:
         print("Unknown operator. Available operators: +, -, * and /")
