@@ -3,6 +3,7 @@
 import sys
 from calculator_1 import add, sub, mul, div
 
+
 def main():
     if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
@@ -12,7 +13,7 @@ def main():
     op = sys.argv[2]
     b = int(sys.argv[3])
 
-    ops = 
+    ops =
     {
             '+': add,
             '-': sub,
