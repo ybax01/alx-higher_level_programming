@@ -24,7 +24,7 @@ def main():
         sys.exit(1)
 
     res = ops[op](a, b)
-    print("{} {} {}".format(a, b, res))
+    print("{} {} {} = {}".format(a, op, b, res))
 
 
 if __name__ == "__main__":
