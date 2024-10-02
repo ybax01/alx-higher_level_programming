@@ -3,6 +3,7 @@
 Module that defines a Square class with size validation and area calculation.
 """
 
+
 class Square:
     """
     A class that represents a square.
