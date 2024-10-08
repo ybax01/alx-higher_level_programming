@@ -1,7 +1,13 @@
 #!/usr/bin/python3
+"""
+This module defines a Rectangle class with width and height properties,
+and includes validation for both attributes.
+"""
+
+
 class Rectangle:
     """Defines a rectangle with width and height properties."""
-    
+
     def __init__(self, width=0, height=0):
         """Initialize the rectangle with optional width and height."""
         self.width = width
