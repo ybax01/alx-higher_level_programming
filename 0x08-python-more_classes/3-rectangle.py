@@ -105,5 +105,5 @@ class Rectangle:
         """
         if self.__width == 0 or self.__height == 0:
             return ""
-        rect_str = (("#" * self.__width + "\n") * self.__height)
+        rect_str = (("#" * self.__width + "\n") * self.__height).rstrip()
         return rect_str
