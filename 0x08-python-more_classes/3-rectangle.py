@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 """
 This module defines a Rectangle class with width and height properties,
-methods to calculate the area, perimeter, and a string representation using '#'.
+methods to calculate the area, perimeter,
+and a string representation using '#'.
 """
+
 
 class Rectangle:
     """Defines a rectangle with width and height properties."""
-    
+
     def __init__(self, width=0, height=0):
         """
         Initialize the rectangle with optional width and height.
@@ -97,7 +99,8 @@ class Rectangle:
 
     def __str__(self):
         """
-        Return a string representation of the rectangle using the character '#'.
+        Return a string representation of the rectangle
+        using the character '#'
 
         Returns:
             str: A string made of '#' representing the rectangle.
