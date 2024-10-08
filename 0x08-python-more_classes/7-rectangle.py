@@ -102,20 +102,18 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        """Return a string representation of the rectangle."""
+         """Return a string representation of the rectangle."""
         if self.__width == 0 or self.__height == 0:
             return ""
-
+        
         rect_str = ""
-        if isinstance(self.print_symbol, list):
-            for _ in range(self.__height):
+        for _ in range(self.__height):
+            if isinstance(self.print_symbol, list):
                 for symbol in self.print_symbol:
                     rect_str += str(symbol) * self.__width
-                rect_str += "\n"
-        else:
-            for _ in range(self.__height):
-                rect_str += str(self.print_symbol) * self.__width + "\n"
-
+            else:
+                rect_str += str(self.print_symbol) * self.__width
+            rect_str += "\n"
         return rect_str.rstrip("\n")
 
     def __repr__(self):
