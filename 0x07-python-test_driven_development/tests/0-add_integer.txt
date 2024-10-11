@@ -5,11 +5,27 @@ print(add_integer(1, 2))  # 3
 print(add_integer(100, -2))  # 98
 print(add_integer(2))  # 100
 print(add_integer(100.3, -2))  # 98
+
+# Type check
 try:
     print(add_integer(4, "School"))
 except Exception as e:
     print(e)  # b must be an integer
+
+# Missing arguments
 try:
-    print(add_integer(None))
+    print(add_integer())
 except Exception as e:
     print(e)  # a must be an integer
+
+# NaN check
+try:
+    print(add_integer(float('nan')))
+except Exception as e:
+    print(e)  # cannot convert float NaN to integer
+
+# Float overflow
+try:
+    print(add_integer(1e400, 1))
+except Exception as e:
+    print(e)  # float overflow occurred
