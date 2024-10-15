@@ -4,6 +4,7 @@
 Student module
 """
 
+
 class Student:
     """
     A class to represent a student.
@@ -27,7 +28,7 @@ class Student:
         Retrieves a dictionary representation of a Student instance.
 
         Args:
-            attrs (list, optional): A list of attribute names to include in the 
+            attrs (list, optional): A list of attribute names to include in the
             dictionary. If None, all attributes are included.
 
         Returns:
@@ -39,6 +40,6 @@ class Student:
                 'last_name': self.last_name,
                 'age': self.age
             }
-        
-        # Create a dictionary with only specified attributes
-        return {attr: getattr(self, attr) for attr in attrs if hasattr(self, attr)}
+
+        filtered_attrs = {attr for attr in attrs if hasattr(self, attr)}
+        return {attr: getattr(self, attr) for attr in filtered_attrs}
