@@ -1,19 +1,33 @@
 # Test for MyList class
-# Testing the append method and print_sorted
+# Testing class creation and printing
 
-Input:
-MyList = __import__('1-my_list').MyList
+Case 1: Class creation
 my_list = MyList()
+print(my_list)
+Expected Output: []
+
+Case 2: Class creation and regular print
+my_list = MyList()
+print(my_list)
+Expected Output: []
+
+Case 3: Class creation, append, and regular print
 my_list.append(1)
+print(my_list)
+Expected Output: [1]
+
+Case 4: Class creation, append, regular print, and sorted print
 my_list.append(4)
 my_list.append(2)
 my_list.append(3)
+print(my_list)
+Expected Output: [1, 4, 2, 3]
+my_list.print_sorted()
+Expected Output: [1, 2, 3, 4]
+
+Case 5: Class creation, multiple appends, regular print, and sorted print
 my_list.append(5)
 print(my_list)
+Expected Output: [1, 4, 2, 3, 5]
 my_list.print_sorted()
-print(my_list)
-
-Expected Output:
-[1, 4, 2, 3, 5]
-[1, 2, 3, 4, 5]
-[1, 4, 2, 3, 5]
+Expected Output: [1, 2, 3, 4, 5]
