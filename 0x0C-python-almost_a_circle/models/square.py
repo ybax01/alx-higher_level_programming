@@ -29,6 +29,30 @@ class Square(Rectangle):
         """
         super().__init__(size, size, x, y, id)
 
+    @property
+    def size(self):
+        """
+        Getter for the size attribute.
+        Returns the value of the width (which is the same as height).
+        """
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """
+        Setter for the size attribute. It sets both width and height to the same value.
+        Uses the same validation as the Rectangle class for width.
+        
+        Args:
+            value (int): The value to set the size (width and height) to.
+            
+        Raises:
+            TypeError: If value is not an integer.
+            ValueError: If value is less than or equal to 0.
+        """
+        self.width = value
+        self.height = value
+
     def __str__(self):
         """
         Overrides the `__str__` method to return a custom string representation
