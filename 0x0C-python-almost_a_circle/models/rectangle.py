@@ -51,11 +51,15 @@ class Rectangle(Base):
 
     def display(self):
         """
-        Prints the Rectangle instance using the `#` character to stdout.
-        Does not handle `x` and `y` offsets.
+        Prints the Rectangle instance using the `#` character to stdout,
+        taking into account the `x` and `y` offsets.
         """
+        # Print `y` newlines (vertical offset)
+        print("\n" * self.y, end="")
+
+        # For each row in height, print `x` spaces (horizontal offset) followed by `#` * width
         for _ in range(self.height):
-            print("#" * self.width)
+            print(" " * self.x + "#" * self.width)
 
     def __str__(self):
         """
