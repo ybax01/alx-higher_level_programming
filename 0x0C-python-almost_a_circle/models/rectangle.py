@@ -9,7 +9,7 @@ from models.base import Base
 class Rectangle(Base):
     """
     The Rectangle class represents a rectangle and inherits from the Base class.
-    
+                  
     Attributes:
         __width (int): The width of the rectangle.
         __height (int): The height of the rectangle.
