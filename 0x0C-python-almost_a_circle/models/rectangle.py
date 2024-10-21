@@ -9,7 +9,7 @@ from models.base import Base
 class Rectangle(Base):
     """
     The Rectangle class represents a rectangle and inherits from the Base class.
-                  
+    
     Attributes:
         __width (int): The width of the rectangle.
         __height (int): The height of the rectangle.
@@ -93,3 +93,12 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        """
+        Computes and returns the area of the Rectangle instance.
+
+        Returns:
+            int: The area of the rectangle (width * height).
+        """
+        return self.width * self.height
