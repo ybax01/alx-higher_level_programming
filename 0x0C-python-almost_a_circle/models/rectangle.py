@@ -6,10 +6,12 @@ This module defines the Rectangle class, which inherits from the Base class.
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """
-    The Rectangle class represents a rectangle and inherits from the Base class.
-    
+    The Rectangle class represents a rectangle
+    and inherits from the Base class.
+
     Attributes:
         __width (int): The width of the rectangle.
         __height (int): The height of the rectangle.
@@ -68,13 +70,17 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """
-        Updates attributes of the Rectangle instance based on the provided arguments.
+        Updates attributes of the Rectangle instance
+        based on the provided arguments.
 
         Args:
-            *args: Variable-length argument list. The first argument updates the `id`,
-                   the second updates `width`, the third `height`, the fourth `x`, 
+            *args: Variable-length argument list.
+                   The first argument updates the `id`,
+                   the second updates `width`,
+                   the third `height`, the fourth `x`,
                    and the fifth `y`.
-            **kwargs: Dictionary of key/value pairs. Updates the attributes using the keys.
+            **kwargs: Dictionary of key/value pairs.
+            Updates the attributes using the keys.
 
         If `*args` is provided, `**kwargs` is ignored.
         """
