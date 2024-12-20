@@ -24,7 +24,7 @@ class Rectangle {
     this.width *= 2;
     this.height *= 2;
   }
-};
+}
 
 module.exports = class Square extends Rectangle {
   constructor (size) {
