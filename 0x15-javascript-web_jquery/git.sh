@@ -1,6 +1,6 @@
 #/bin/bash
 
-chmod u+x *.py
+chmod u+x *.js
 
 git add .
 git commit -m 'jquery learning'
